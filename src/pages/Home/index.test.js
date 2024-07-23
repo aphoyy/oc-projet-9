@@ -30,15 +30,25 @@ describe("When Form is created", () => {
 
 describe("When a page is created", () => {
   it("a list of events is displayed", () => {
-    // to implement
+    render(<Home />);
+    setTimeout(() => {
+      screen.findByText("#DigitonPARIS");
+      screen.findByText("Janvier");
+    }, 50);
   })
-  it("a list a people is displayed", () => {
-    // to implement
+  it("a list a people is displayed", async () => {
+    render(<Home />);
+    await screen.findByText("Samira");
+    await screen.findByText("CEO");
   })
   it("a footer is displayed", () => {
-    // to implement
+    render(<Home />);
+    expect(screen.getByTestId("footer-testid")).toBeInTheDocument();
   })
   it("an event card, with the last event, is displayed", () => {
-    // to implement
+    render(<Home />);
+    setTimeout(() => {
+      expect(screen.getByTestId("card-testid")).toBeInTheDocument()
+    }, 50);
   })
 });
