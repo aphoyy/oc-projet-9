@@ -1,14 +1,16 @@
-# 724 Events
+# 724 Events - OpenClassrooms
+The goal of this project was to use dev tools and tests to solve every bug from this website.
 
 ## Description
-L'application est le site d'une agence evenementielle.
-## Pre-requis
+The application is a web event agency
+
+## Pre-required
 - NodeJS  >= v16.14.1
 
 ## Installation
 - `yarn install`
 
-## Lancement de l'application
+## Start the app
 - `yarn start`
 
 ## Tests
